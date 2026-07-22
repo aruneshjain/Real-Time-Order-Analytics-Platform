@@ -28,3 +28,24 @@ spring:
 logging:
   level:
     liquibase: info
+    org.springdoc: info
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+    operations-sorter: method
+    tags-sorter: alpha
+
+  openapi:
+    title: Real-Time Order Analytics Platform
+    description: REST API for Order Service with real-time analytics
+    version: 0.0.1
+    contact:
+      name: API Support
+      url: http://localhost:8001
+    license:
+      name: Apache 2.0
+      url: http://www.apache.org/licenses/LICENSE-2.0.html

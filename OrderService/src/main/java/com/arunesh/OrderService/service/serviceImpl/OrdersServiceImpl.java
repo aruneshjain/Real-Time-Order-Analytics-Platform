@@ -20,7 +20,7 @@ public class OrdersServiceImpl implements OrdersService {
     public Orders createOrder(String productId, Double amount) {
         Orders order = new Orders(
                 UUID.randomUUID().toString(),
-                productId,
+                null,
                 amount,
                 Instant.now()
         );
@@ -32,6 +32,6 @@ public class OrdersServiceImpl implements OrdersService {
     }
 
     public long countOrdersByProduct(String productId) {
-        return repository.countByProductId(productId);
+        return repository.countByProduct_ProductId(productId);
     }
 }

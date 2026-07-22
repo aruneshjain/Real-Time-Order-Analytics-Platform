@@ -1,9 +1,6 @@
 package com.arunesh.OrderService.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,8 +19,10 @@ public class Orders {
         @Column(name = "order_id", length = 50)
         private String orderId;
 
-        @Column(name = "product_id", nullable = false, length = 50)
-        private String productId;
+        // ✅ Many-to-One relationship with Products
+        @ManyToOne(fetch = FetchType.EAGER) // EAGER ensures product details are loaded with the order
+        @JoinColumn(name = "product_id", referencedColumnName = "product_id", nullable = false)
+        private Products product;
 
         @Column(name = "amount", nullable = false)
         private Double amount;
