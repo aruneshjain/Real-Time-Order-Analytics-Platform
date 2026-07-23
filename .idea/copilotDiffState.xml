@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="/db.changelog-master (snapshot).xml">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="/db.changelog-master (snapshot).xml" />
+              <option name="originalContent" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;databaseChangeLog&#10;  xmlns=&quot;http://www.liquibase.org/xml/ns/dbchangelog&quot;&#10;  xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;  xsi:schemaLocation=&quot;http://www.liquibase.org/xml/ns/dbchangelog&#10;                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd&quot;&gt;&#10;&#10;  &lt;changeSet id=&quot;2026-07-23-initial-sqlfile&quot; author=&quot;migrator&quot;&gt;&#10;    &lt;comment&gt;Apply initial schema and seed data from external SQL file (2026-07-23)&lt;/comment&gt;&#10;    &lt;sqlFile path=&quot;2026-07-23-initial-schema.sql&quot; relativeToChangelogFile=&quot;true&quot; splitStatements=&quot;true&quot; stripComments=&quot;true&quot;/&gt;&#10;  &lt;/changeSet&gt;&#10;&#10;&lt;/databaseChangeLog&gt;&#10;&#10;" />
+              <option name="updatedContent" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;databaseChangeLog&#10;  xmlns=&quot;http://www.liquibase.org/xml/ns/dbchangelog&quot;&#10;  xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;  xsi:schemaLocation=&quot;http://www.liquibase.org/xml/ns/dbchangelog&#10;                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd&quot;&gt;&#10;&#10;  &lt;changeSet id=&quot;2026-07-23-create-schema&quot; author=&quot;migrator&quot;&gt;&#10;    &lt;comment&gt;Create schema used by the application if it does not exist&lt;/comment&gt;&#10;    &lt;sql splitStatements=&quot;true&quot; stripComments=&quot;true&quot;&gt;&lt;![CDATA[&#10;      CREATE SCHEMA IF NOT EXISTS &quot;OrderService&quot;;&#10;    ]]&gt;&lt;/sql&gt;&#10;  &lt;/changeSet&gt;&#10;&#10;  &lt;changeSet id=&quot;2026-07-23-initial-sqlfile&quot; author=&quot;migrator&quot;&gt;&#10;    &lt;comment&gt;Apply initial schema and seed data from external SQL file (2026-07-23)&lt;/comment&gt;&#10;    &lt;sqlFile path=&quot;2026-07-23-initial-schema.sql&quot; relativeToChangelogFile=&quot;true&quot; splitStatements=&quot;true&quot; stripComments=&quot;true&quot;/&gt;&#10;  &lt;/changeSet&gt;&#10;&#10;&lt;/databaseChangeLog&gt;&#10;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
