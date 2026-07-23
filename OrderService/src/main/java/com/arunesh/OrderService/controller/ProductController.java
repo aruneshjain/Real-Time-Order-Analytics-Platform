@@ -1,6 +1,7 @@
 package com.arunesh.OrderService.controller;
 
-import com.arunesh.OrderService.entity.Products;
+import com.arunesh.OrderService.dto.products.ProductRequest;
+import com.arunesh.OrderService.dto.products.ProductResponse;
 import com.arunesh.OrderService.service.ProductService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -15,12 +16,12 @@ public class ProductController {
     private final ProductService service;
 
     @PostMapping
-    public Products addProduct(@RequestBody Products product) {
+    public ProductResponse addProduct(@RequestBody ProductRequest product) {
         return service.addProduct(product);
     }
 
     @GetMapping
-    public List<Products> getProducts() {
+    public List<ProductResponse> getProducts() {
         return service.getAllProducts();
     }
 }

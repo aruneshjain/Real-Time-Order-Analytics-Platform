@@ -1,11 +1,12 @@
 package com.arunesh.OrderService.service;
 
-import com.arunesh.OrderService.entity.Products;
+import com.arunesh.OrderService.dto.products.ProductRequest;
+import com.arunesh.OrderService.dto.products.ProductResponse;
 
 import java.util.List;
 
 public interface ProductService {
-    List<Products> getAllProducts();
+    List<ProductResponse> getAllProducts();
 
-    Products addProduct(Products product);
+    ProductResponse addProduct(ProductRequest product);
 }

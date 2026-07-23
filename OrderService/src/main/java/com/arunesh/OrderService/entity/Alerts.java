@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.Instant;
+
 @Entity
 @Table(name = "alerts", schema = "OrderService")
 @Data
@@ -24,6 +26,6 @@ public class Alerts {
     private String description;
 
     @Column(name = "created_at", nullable = false)
-    private java.time.Instant createdAt;
+    private Instant createdAt;
 
 }

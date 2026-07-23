@@ -1,6 +1,6 @@
 package com.arunesh.OrderService.controller;
 
-import com.arunesh.OrderService.entity.OrderMetrics;
+import com.arunesh.OrderService.dto.orderMetrics.OrderMetricsResponse;
 import com.arunesh.OrderService.service.OrderMetricsService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,5 +16,5 @@ public class OrderMetricsController {
     private final OrderMetricsService service;
 
     @GetMapping
-    public List<OrderMetrics> getMetrics() { return service.getMetrics(); }
+    public List<OrderMetricsResponse> getMetrics() { return service.getMetrics(); }
 }

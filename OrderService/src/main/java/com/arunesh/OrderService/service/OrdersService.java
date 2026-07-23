@@ -1,13 +1,14 @@
 package com.arunesh.OrderService.service;
 
-import com.arunesh.OrderService.entity.Orders;
+import com.arunesh.OrderService.dto.orders.OrderRequest;
+import com.arunesh.OrderService.dto.orders.OrderResponse;
 
 import java.util.List;
 
 public interface OrdersService {
-    Orders createOrder(String productId, Double amount);
+    OrderResponse createOrder(OrderRequest request);
 
-    List<Orders> getAllOrders();
+    List<OrderResponse> getAllOrders();
 
     long countOrdersByProduct(String productId);
 }
