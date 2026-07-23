@@ -1,0 +1,3 @@
+
+CREATE DATABASE IF NOT EXISTS "AnalyticsPlatform";
+CREATE SCHEMA IF NOT EXISTS order_service;

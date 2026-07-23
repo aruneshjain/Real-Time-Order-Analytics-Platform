@@ -8,7 +8,7 @@
   <changeSet id="2026-07-23-create-schema" author="migrator">
     <comment>Create schema used by the application if it does not exist</comment>
     <sql splitStatements="true" stripComments="true"><![CDATA[
-CREATE SCHEMA IF NOT EXISTS "order_service";
+         CREATE SCHEMA IF NOT EXISTS "order_service";
     ]]></sql>
   </changeSet>
 

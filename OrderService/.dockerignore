@@ -1,0 +1,24 @@
+# Maven / Gradle build outputs
+build/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# IDE/project files
+.idea/
+.vscode/
+*.iml
+
+# Git and version control
+.git
+.gitignore
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+
+# Node / frontend artifacts (if present)
+node_modules/
+dist/

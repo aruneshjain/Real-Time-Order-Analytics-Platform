@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 7001
 
 spring:
   application:
@@ -49,3 +49,12 @@ springdoc:
     license:
       name: Apache 2.0
       url: http://www.apache.org/licenses/LICENSE-2.0.html
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, metrics, prometheus
+  endpoint:
+    health:
+      show-details: always
